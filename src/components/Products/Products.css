@@ -1,0 +1,82 @@
+/* Styles for MentalHealth component */
+
+.Products-section {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.Products-header {
+  margin-bottom: 50px;
+}
+
+.Products-header span {
+  color: #007b7f;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Products-header h2 {
+  font-size: 3em;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.Products-header p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.6;
+}
+
+.Products-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.Products-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 30%; /* Adjust as needed for 3 cards in a row */
+  min-width: 280px;
+  text-align: left;
+}
+
+.card-image {
+  width: 100%;
+  height: 400px; /* Fixed height for images */
+  object-fit: cover;
+}
+
+.Products-card h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin: 20px 20px 10px 20px;
+}
+
+.Products-card p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0 20px 20px 20px;
+}
+
+@media (max-width: 1024px) {
+  .Products-card {
+    width: 45%; /* Two cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .Products-card {
+    width: 90%; /* One card per row on small screens */
+  }
+
+  .Products-header h2 {
+    font-size: 2.5em;
+  }
+}

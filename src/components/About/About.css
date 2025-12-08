@@ -1,0 +1,86 @@
+.about-section {
+  padding: 50px 10%; /* Adjust padding as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+.about-image-container img{
+  min-height: 80vh;
+  min-width: 25vw;
+  object-fit: cover;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  max-width: 1200px; /* Max width for content */
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image-container {
+    min-width: unset;
+    width: 80%; /* Adjust as needed */
+    margin-bottom: 30px;
+  }
+
+  .about-text-container {
+    align-items: center; /* Center text content in column layout */
+  }
+
+  .read-more-button {
+    align-self: center; /* Center button in column layout */
+  }
+}
+
+.about-image-container {
+  flex: 1;
+  min-width: 300px; /* Minimum width for the image container */
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text-container p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.read-more-button {
+  align-self: flex-start; /* Align button to the right */
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007b7f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}

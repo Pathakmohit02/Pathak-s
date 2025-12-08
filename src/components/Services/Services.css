@@ -1,0 +1,92 @@
+.services-section {
+  padding: 50px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+.services-image-container img{
+  min-height: 80vh;
+  min-width: 25vw;
+  object-fit: cover;
+}
+
+.services-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  max-width: 1200px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .services-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .services-image-container {
+    min-width: unset;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .services-text-container {
+    align-items: center;
+  }
+
+  .read-more-button {
+    align-self: center;
+  }
+}
+
+.services-image-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.services-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services-text-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-text-container p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.service-heading {
+  color: #007b7f; /* A distinct color for highlighting */
+  font-size: 1.1em; /* Slightly larger font size */
+  font-weight: bold;
+}
+
+.read-more-button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007b7f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}

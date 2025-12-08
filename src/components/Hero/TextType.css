@@ -1,0 +1,9 @@
+.text-type__cursor {
+  display: inline-block;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+.text-type__cursor--hidden {
+  opacity: 0;
+}
