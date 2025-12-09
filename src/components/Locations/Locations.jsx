@@ -18,7 +18,7 @@ const Locations = () => {
         <div className="location-card pink-card">
           <div className="location-icon">📍</div>
           <h3>Near Gour Cycle Store</h3>
-          <p>In front to Singhal Medical Store<br />Fatehganj East 243506</p>
+          <p>Opposite to Singhal Medical Store<br />Fatehganj East 243506</p>
         </div>
       </div>
       <div className="contact-info">
